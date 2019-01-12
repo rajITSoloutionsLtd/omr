@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<configuration>
+  <configSections>
+    <sectionGroup name="applicationSettings"
+                  type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="OMRreaderApp.Properties.Settings"
+               type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+               requirePermission="false" />
+    </sectionGroup>
+    <sectionGroup name="userSettings"
+                  type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="OMRreaderApp.Properties.Settings"
+               type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+               allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+    </sectionGroup>
+  </configSections>
+  <startup>
+
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0" />
+  </startup>
+  <connectionStrings>
+    <add name="OMRAppConnectionString" providerName="System.Data.sqlclient"
+         connectionString="Data Source=.\sqlexpress;Initial Catalog=OmrAppDb;Integrated Security=True" />
+  </connectionStrings>
+  <applicationSettings>
+    <OMRreaderApp.Properties.Settings>
+      <setting name="IsTrial" serializeAs="String">
+        <value>False</value>
+      </setting>
+      <setting name="EmptyCharacter" serializeAs="String">
+        <value>_</value>
+      </setting>
+      <setting name="Databases" serializeAs="Xml">
+        <value>
+          <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <string>OMRConfigDb.sdf</string>
+          </ArrayOfString>
+        </value>
+      </setting>
+    </OMRreaderApp.Properties.Settings>
+  </applicationSettings>
+  <userSettings>
+    <OMRreaderApp.Properties.Settings>
+      <setting name="InitialSearchAreaWidth" serializeAs="String">
+        <value>200</value>
+      </setting>
+      <setting name="InitialSearchAreaHeight" serializeAs="String">
+        <value>150</value>
+      </setting>
+      <setting name="ColumnWiseColorDepth" serializeAs="String">
+        <value>15</value>
+      </setting>
+      <setting name="RowWiseColorDepth" serializeAs="String">
+        <value>15</value>
+      </setting>
+      <setting name="MappingWidth" serializeAs="String">
+        <value>1165</value>
+      </setting>
+      <setting name="MappingHight" serializeAs="String">
+        <value>1153</value>
+      </setting>
+      <setting name="MatchingPercentage" serializeAs="String">
+        <value>0.9</value>
+      </setting>
+      <setting name="RollLength" serializeAs="String">
+        <value>6</value>
+      </setting>
+      <setting name="IncreasedSearchAreaWidth" serializeAs="String">
+        <value>350</value>
+      </setting>
+      <setting name="IncreasedSearchAreaHight" serializeAs="String">
+        <value>250</value>
+      </setting>
+      <setting name="RunTime" serializeAs="String">
+        <value>15</value>
+      </setting>
+      <setting name="AllowNegativeMarking" serializeAs="String">
+        <value>False</value>
+      </setting>
+      <setting name="MarkValue" serializeAs="String">
+        <value>1</value>
+      </setting>
+      <setting name="NegativeMarkValue" serializeAs="String">
+        <value>0.25</value>
+      </setting>
+      <setting name="ApplyRollSetRestriction" serializeAs="String">
+        <value>False</value>
+      </setting>
+      <setting name="CurrentDatabase" serializeAs="String">
+        <value>OMRConfigDb.sdf</value>
+      </setting>
+      <setting name="StartPointX" serializeAs="String">
+        <value>40</value>
+      </setting>
+      <setting name="StartPointY" serializeAs="String">
+        <value>300</value>
+      </setting>
+      <setting name="MappedImgAngle" serializeAs="String">
+        <value>0</value>
+      </setting>
+      <setting name="MarkLimit" serializeAs="String">
+        <value>100</value>
+      </setting>
+      <setting name="IsCustomMapping" serializeAs="String">
+        <value>False</value>
+      </setting>
+      <setting name="CustomMappingX" serializeAs="String">
+        <value>0</value>
+      </setting>
+      <setting name="CustomMappingY" serializeAs="String">
+        <value>0</value>
+      </setting>
+    </OMRreaderApp.Properties.Settings>
+  </userSettings>
+</configuration>
